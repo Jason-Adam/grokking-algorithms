@@ -1,9 +1,26 @@
 #!/usr/bin env python
 
 from math import floor
+from typing import List, Tuple
 
 
-def binary_search(sorted_list: list, item: int) -> tuple:
+def binary_search(sorted_list: List[int], item: int) -> Tuple[int, int]:
+    """Determines index location of given item in a sorted list.
+
+        Parameters
+        ----------
+        sorted_list: list
+            Pre-sorted list of integers that search
+            will be performed on.
+        item: int
+            Number to search for in the list.
+
+        Returns
+        -------
+        Tuple[int, int]
+            Tuple containing index of item and steps
+            required during search.
+    """
     low: int = 0
     high: int = len(sorted_list) - 1
     steps: int = 0
