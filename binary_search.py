@@ -9,7 +9,7 @@ def binary_search(sorted_list: List[int], item: int) -> Tuple[int, int]:
 
         Parameters
         ----------
-        sorted_list: list
+        sorted_list: List[int]
             Pre-sorted list of integers that search
             will be performed on.
         item: int
