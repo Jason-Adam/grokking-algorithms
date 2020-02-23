@@ -106,3 +106,4 @@ venv.bak/
 # misc
 *.swp
 vim-markdown-preview.html
+.DS_Store
